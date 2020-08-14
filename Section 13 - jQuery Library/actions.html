@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>     
+<script>
+$(document).ready(function(){
+	$("p").on({
+		mouseenter: function(){
+		$(this).css("background-color","yellow");
+		},
+		mouseleave: function(){
+		$(this).css("background-color","cyan");
+		},
+		click: function(){
+		$(this).css("background-color","black");
+		}
+		});
+	});
+</script>
+</head>
+<body>
+<p>this is para</p>
+<p> para 2</p>
+</body>
+</html>

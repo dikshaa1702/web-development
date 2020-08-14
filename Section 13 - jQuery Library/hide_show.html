@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>     
+<script>
+$(document).ready(function(){
+	$("#hidden").click(function(){
+		$("p").hide(1000);
+		});
+		$("#visible").click(function(){
+			$("p").show(1000);
+			});
+	});
+		
+</script>
+</head>
+<body>
+<p>para1</p>
+<button id="visible">Show</button>
+<button id="hidden">Hide</button>
+
+</body>
+</html>

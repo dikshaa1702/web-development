@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+	 var square=$("#square");
+	 square.animate({height:'500px', opacity:'0.5'},1000);
+	 square.animate({height:'500px', opacity:'0.9'},500);
+	 square.animate({height:'200px', opacity:'0.5'},1000);
+	 square.animate({height:'200px', opacity:'0.9'},500);
+		});
+	});
+</script>
+<style>
+#square{
+height:40px;
+width:40px;
+background:black;
+margin-top: 5px;
+position: relative;
+}
+</style>
+</head>
+<body>
+<button>Animate</button>
+<div id="square"></div>
+</body>
+</html>

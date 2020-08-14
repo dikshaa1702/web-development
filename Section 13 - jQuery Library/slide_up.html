@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>     
+<script>
+	$(document).ready(function(){
+		$("#topbar").click(function(){
+			$("#pannel").slideUp(1000);
+			});
+		});
+	
+</script>
+<style>
+#pannel, #topbar{
+	padding:5px;
+	text-align: center;
+	background-color:blue;
+	border: solid 1px black;
+	}
+#pannel {
+	padding:80px;
+	
+}
+</style>
+
+</head>
+<body>
+<div id="topbar">View Panel</div>
+<div id="pannel">dropdown pannel</div>
+</body>
+</html>

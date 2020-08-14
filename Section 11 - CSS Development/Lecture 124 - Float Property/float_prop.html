@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+img{
+float: right;
+margin:0 0 10px 10px;
+  }
+</style>
+</head>
+<body>
+<img src="txtbg.jpg" width="200" height="200">
+To assess the performance of the proposed system, experiment was performed to ensure that it performs well. 
+The experiment was performed using 50 images captured using the camera with various obstacle position and distances. The images were 
+divided into 19 images with no obstacles and 31 images with obstacle. Experiment result show that the obstacle detection module provide a 
+very satisfactory result with 100% precision and 100% recall.  The 31 images with obstacle were then divided into 25 training images and 6 testing 
+images. The training images were used to create the RANSAC model that describes the relationship between the distance of the obstacle and the distance
+ of the laser blob. The testing images are then used to measure the error between the prediction distance and the actual distance. The error of each 
+ image is described in Table 1. From the experiments, it can be concluded that our system performs very satisfactorily with average error of 1.706 cm. 
+ The RANSAC method showed a better performance than the Linear Regression result which is showed average error of 2.508 cm.  The last module, the navigation
+ system, also show a very satisfactory result with 100% accuracy of movement. The wheelchair was navigated quickly and correctly in real time responding to 
+ the obstacles appearance on the pathway.  B. Human Tracking Subsystem Evaluation To evaluate performance of the proposed method for tracking human guide u
+ nder unstable lighting and background environment , we used accuracy method [19]. The testing scenario are based on the number of frames which contains a 
+guide detected by HOG and the number of frames which contains guide sequentially detected by HOG and EDM as a powerful method for detection and tracking.
+In the current work, we have developed smart wheelchair system which is equipped with obstacle detection and human tracking algorithm based on computer vision.
+ We mounted a camera placed in front of the wheelchair and a line laser which is aimed toward the obstacle. Later, the pattern of captured image of the line 
+ laser will be calculated using RANSAC method to estimate the distance and the position of the obstacle. For the human tracking part, HOG is applied on the 
+ image sequence containing human as guide. After having a certain frame that contains guide area using HOG, the specific feature of the area that can be 
+ extracted using entropy. In this study, we use the upper third part of detected block from HOG detection, which is extracted from a third of height and width,
+ respectively. The experiment result of obstacle distance estimation using RANSAC showed lower average error, which is only 1.076 cm compared to linear 
+ regression which is 2.508 cm. The average accuracy of human guide detecting algorithm also showed acceptable result, which yield over 80% of accuracy.  
+</body>
+</html>
